@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mừng Sinh Nhật Maria Nguyễn Thư · 15/10</title>
+  <meta name="description" content="Pax et Bonum – Món quà nhỏ mừng sinh nhật và đồng hành ơn gọi Mến Thánh Giá của em Maria Nguyễn Thư.">
+  <meta name="theme-color" content="#70d6ff">
+
+  <!-- Google Fonts: Cormorant Garamond (tiêu đề) · Plus Jakarta Sans (nội dung) · Dancing Script (chữ ký) — cả ba có bộ ký tự tiếng Việt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Dancing+Script:wght@500;600&display=swap">
+
+  <!-- Animate.css & AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Tailwind CSS v3 (Play CDN, cố định phiên bản) -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            aqua: { 50: '#f2fcfe', 100: '#e0f7fa', 200: '#b8ecf7', 300: '#70d6ff', 400: '#3fc1f0', 500: '#1aa6d6', 600: '#127fa6', 700: '#0f6585', 900: '#12485c' },
+            gold: { 50: '#fffbf0', 100: '#fdf6e3', 200: '#f7e7b4', 300: '#ecd27f', 400: '#d4a537', 500: '#b8891f', 600: '#8f6a14' }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+            script: ['"Dancing Script"', 'cursive']
+          },
+          boxShadow: {
+            soft: '0 12px 40px -14px rgba(18, 127, 166, .28)',
+            glow: '0 10px 30px -10px rgba(26, 166, 214, .45)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Pháo hoa giấy -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
+
+  <!-- CSS riêng của trang -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans antialiased min-h-screen overflow-x-hidden selection:bg-aqua-200">
+  <div id="sky" aria-hidden="true"></div>
+
+  <main class="relative z-10 overflow-x-hidden">
+
+    <!-- ===================== HERO ===================== -->
+    <header class="px-4 sm:px-6 pt-12 sm:pt-20 pb-10 text-center">
+      <div class="max-w-3xl mx-auto">
+        <!-- Tràng hạt Mân Côi & Thánh Giá -->
+        <canvas id="hero-rosary" class="animate__animated animate__fadeInDown mx-auto block w-28 h-40 sm:w-36 sm:h-52" role="img" aria-label="Chuỗi hạt Mân Côi thạch anh trắng tóc đỏ với Thánh Giá pha lê">Chuỗi hạt Mân Côi thạch anh trắng tóc đỏ với Thánh Giá pha lê</canvas>
+
+        <p class="animate__animated animate__fadeIn animate__delay-1s mt-6 font-serif italic text-lg sm:text-2xl text-gold-600 leading-snug">
+          Pax et Bonum – Nguồn Bình An và Mọi Thiện Hảo từ Thiên Chúa
+        </p>
+
+        <h1 class="animate__animated animate__fadeInUp mt-4 font-serif font-semibold text-5xl sm:text-7xl leading-[1.05] text-aqua-900 text-balance">
+          Chúc Mừng Sinh Nhật
+          <span class="block italic font-medium text-aqua-600 mt-1">Maria Nguyễn Thư</span>
+        </h1>
+
+        <div class="animate__animated animate__fadeIn animate__delay-1s mt-5 inline-flex items-center gap-3">
+          <span class="h-px w-10 bg-gold-400"></span>
+          <span class="font-serif font-semibold text-3xl sm:text-4xl text-gold-500 tracking-wider">15 / 10</span>
+          <span class="h-px w-10 bg-gold-400"></span>
+        </div>
+
+        <p class="animate__animated animate__fadeInUp animate__delay-1s mt-6 text-base sm:text-lg leading-relaxed text-aqua-900/80 max-w-2xl mx-auto">
+          Giữa Tháng Mân Côi, cùng Mẹ Maria đứng dưới chân Thập Giá, chiêm ngắm Đức Giê-su Ki-tô Chịu Đóng Đinh – Tình Yêu đã hiến trọn vì chúng ta.
+        </p>
+
+        <nav class="animate__animated animate__fadeInUp animate__delay-2s mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#tro-ly" class="rounded-full bg-aqua-500 hover:bg-aqua-600 text-white px-6 py-3 font-medium shadow-glow transition-colors">Góc Lắng Nghe</a>
+          <a href="#so-vang" class="rounded-full border border-gold-400 bg-white/60 backdrop-blur-md text-gold-600 hover:bg-gold-100 px-6 py-3 font-medium transition-colors">Sổ Vàng Ý Nguyện</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===================== THIỆP LỜI CHÚC CHÍNH ===================== -->
+    <div class="px-4 sm:px-6 pb-14">
+      <div class="max-w-2xl mx-auto">
+        <article data-aos="zoom-in-up"
+          class="relative rounded-2xl bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-gold-300/40 shadow-soft px-6 py-10 sm:px-12 sm:py-14">
+          <div class="pointer-events-none absolute inset-2.5 rounded-xl border border-gold-400/40" aria-hidden="true"></div>
+
+          <h2 id="thiep-title" class="text-center text-xs tracking-[0.3em] uppercase text-gold-600 font-medium">Lời Chúc Từ Người Anh</h2>
+          <div class="divider my-5"></div>
+
+          <div class="font-serif text-lg sm:text-[1.35rem] leading-relaxed text-aqua-900 space-y-4">
+            <p class="font-script text-2xl sm:text-3xl text-aqua-600">Gửi em Maria Nguyễn Thư,</p>
+            <p>Nhân ngày sinh nhật 15/10 và giữa không khí thiêng liêng của Tháng Mân Côi, anh gửi đến em lời cầu nguyện chân thành và mộc mạc nhất.</p>
+            <p>Nguyện xin Chúa Giê-su Ki-tô Chịu Đóng Đinh – Đối tượng duy nhất của lòng trí em – luôn là nguồn sức mạnh, niềm vui và sự nâng đỡ cho em trên hành trình Mến Thánh Giá. Nhờ lời chuyển cầu của Mẹ Maria, mong em luôn giữ tâm hồn khiết tịnh như sắc trắng, bền bỉ với Đức tin như đá, để dõi theo Dấu Chân Thập Giá trong sự trung tín và rạng ngời.</p>
+            <p>Chúc em một tuổi mới ngập tràn ân sủng và luôn kiên vững trong ơn gọi dâng hiến.</p>
+          </div>
+
+          <div class="divider my-6"></div>
+          <p class="text-center font-serif italic text-xl text-gold-600">Pax et Bonum</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- ===================== DƯỚI CHÂN MẸ MÂN CÔI (hình minh hoạ SVG) ===================== -->
+    <section id="duoi-chan-me" class="px-4 sm:px-6 pb-14" aria-labelledby="scene-title">
+      <div class="max-w-xl mx-auto">
+        <figure data-aos="fade-up" class="rounded-2xl bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-gold-300/40 shadow-soft p-3 sm:p-4">
+          <div class="overflow-hidden rounded-xl">
+          <canvas id="scene-canvas" class="block w-full" role="img" aria-label="Nữ tu và nữ đệ tử Mến Thánh Giá quỳ cầu nguyện dưới chân Đức Mẹ Mân Côi">Trong nhà nguyện nhỏ ngập ánh sáng vàng, Đức Mẹ Mân Côi khăn và áo choàng xanh viền vàng đứng trên bệ đá, tay trái bế Chúa Hài Đồng cầm quả địa cầu, tay phải thả tràng hạt Beryl xanh, sau đầu là vầng hào quang tia vàng. Bên trái, một nữ tu áo dòng đen cổ trắng, khăn voan trắng, quỳ chắp tay. Bên phải, một nữ đệ tử áo dài trắng trơn quỳ cúi đầu lần chuỗi thạch anh trắng điểm hạt đỏ.</canvas>
+          </div>
+          <figcaption class="px-2 pt-5 pb-2 text-center">
+            <p class="text-xs tracking-[0.3em] uppercase text-gold-600 font-medium">Tháng Mân Côi</p>
+            <h2 id="scene-title" class="mt-2 font-serif font-semibold text-3xl sm:text-4xl text-aqua-900 text-balance">Dưới Chân Mẹ Mân Côi</h2>
+            <p class="mt-2 text-aqua-900/75 leading-relaxed">Bên chị nữ tu Mến Thánh Giá, người đệ tử cúi đầu lần hạt, phó thác hành trình ơn gọi trong tay Mẹ.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== Ý NGHĨA CHUỖI HẠT MÂN CÔI ===================== -->
+    <section id="man-coi" class="px-4 sm:px-6 py-14" aria-labelledby="man-coi-title">
+      <div class="max-w-4xl mx-auto">
+        <div data-aos="fade-up" class="text-center mb-10">
+          <p class="text-xs tracking-[0.3em] uppercase text-gold-600 font-medium">Thạch Anh Trắng Tóc Đỏ · Thánh Giá Pha Lê</p>
+          <h2 id="man-coi-title" class="mt-2 font-serif font-semibold text-4xl sm:text-5xl text-aqua-900 text-balance">Ý Nghĩa Chuỗi Hạt Mân Côi</h2>
+          <p class="mt-3 text-aqua-900/75 max-w-xl mx-auto">Mỗi chất liệu và sắc màu của chiếc vòng tay Mân Côi là một lời nhắc về đời sống Đức tin và ơn gọi dâng hiến.</p>
+        </div>
+
+        <ul class="grid gap-4 sm:grid-cols-2">
+          <li data-aos="fade-up" class="color-card flex sm:block items-start gap-4 text-left sm:text-center rounded-2xl bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-aqua-200/60 shadow-soft p-5 sm:p-7">
+            <span class="bead bead-quartz sm:mx-auto" aria-hidden="true"></span>
+            <div>
+              <h3 class="sm:mt-4 font-serif font-semibold text-2xl text-aqua-900">Sắc Trắng Thạch Anh</h3>
+              <p class="text-sm font-medium text-gold-600">Khiết tịnh &amp; Vô nhiễm</p>
+              <p class="mt-2 text-aqua-900/80 leading-relaxed">Biểu tượng cho tâm hồn trinh khiết, trong trẻo, sẵn sàng đón nhận và phản chiếu Ánh Sáng của Thiên Chúa Tình Yêu.</p>
+            </div>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="100" class="color-card flex sm:block items-start gap-4 text-left sm:text-center rounded-2xl bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-aqua-200/60 shadow-soft p-5 sm:p-7">
+            <span class="bead bead-quartz bead-rutile sm:mx-auto" aria-hidden="true"></span>
+            <div>
+              <h3 class="sm:mt-4 font-serif font-semibold text-2xl text-aqua-900">Điểm Hạt Tóc Đỏ</h3>
+              <p class="text-sm font-medium text-gold-600">Tình Yêu Thập Giá &amp; Sự Hy Sinh</p>
+              <p class="mt-2 text-aqua-900/80 leading-relaxed">Tượng trưng cho Máu Thánh Chúa Giê-su, lòng mến sắt son và tinh thần hy sinh dấn thân trong ơn gọi Mến Thánh Giá.</p>
+            </div>
+          </li>
+          <li data-aos="fade-up" class="color-card flex sm:block items-start gap-4 text-left sm:text-center rounded-2xl bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-aqua-200/60 shadow-soft p-5 sm:p-7">
+            <span class="bead-strand sm:mx-auto" aria-hidden="true"><i></i><i></i><i></i></span>
+            <div>
+              <h3 class="sm:mt-4 font-serif font-semibold text-2xl text-aqua-900">Độ Bền Của Đá Tự Nhiên</h3>
+              <p class="text-sm font-medium text-gold-600">Sự Bền Bỉ Đức Tin</p>
+              <p class="mt-2 text-aqua-900/80 leading-relaxed">Nhắc nhớ sự kiên trì, vững vàng, không phai nhạt theo thời gian trên hành trình dâng hiến.</p>
+            </div>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="100" class="color-card flex sm:block items-start gap-4 text-left sm:text-center rounded-2xl bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-aqua-200/60 shadow-soft p-5 sm:p-7">
+            <span class="cross-crystal sm:mx-auto" aria-hidden="true"></span>
+            <div>
+              <h3 class="sm:mt-4 font-serif font-semibold text-2xl text-aqua-900">Thánh Giá Pha Lê Trong Suốt</h3>
+              <p class="text-sm font-medium text-gold-600">Ánh Sáng Phục Sinh</p>
+              <p class="mt-2 text-aqua-900/80 leading-relaxed">Biểu trưng cho tâm hồn trong suốt để ân sủng Chúa Thánh Thần xuyên thấu, hướng về niềm vui và ánh sáng Phục Sinh.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 1 · TRỢ LÝ THIÊNG LIÊNG ===================== -->
+    <section id="tro-ly" class="px-4 sm:px-6 py-14 scroll-mt-4" aria-labelledby="tro-ly-title">
+      <div class="max-w-3xl mx-auto">
+        <div data-aos="fade-up" class="text-center mb-8">
+          <p class="text-xs tracking-[0.3em] uppercase text-gold-600 font-medium">Trợ Lý Thiêng Liêng</p>
+          <h2 id="tro-ly-title" class="mt-2 font-serif font-semibold text-4xl sm:text-5xl text-aqua-900 text-balance">Góc Lắng Nghe &amp; Lời Chúa Khích Lệ</h2>
+          <p class="mt-3 text-aqua-900/75 max-w-xl mx-auto">Em có thể viết vài dòng tâm tư để cùng đón nhận một Lời Chúa về Thập Giá, Lòng Mến và sự Phó Thác.</p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="120"
+          class="rounded-2xl bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-aqua-200/70 shadow-soft p-5 sm:p-8">
+          <label for="ai-input" class="block text-sm font-medium text-aqua-700 mb-2">Tâm tư / ý nguyện của em</label>
+          <textarea id="ai-input" rows="4" maxlength="500"
+            class="block w-full rounded-2xl border border-aqua-200 bg-white/90 px-4 py-3 text-aqua-900 placeholder:text-aqua-900/40 focus:outline-none focus:ring-2 focus:ring-aqua-300 focus:border-aqua-300 resize-y"
+            placeholder="Em đang mang điều gì trong lòng? Một niềm vui, một nỗi lo, hay một ý nguyện trên hành trình Mến Thánh Giá…"></textarea>
+          <div class="mt-1 text-right text-xs text-aqua-900/50"><span id="ai-count">0</span>/500</div>
+
+          <div class="mt-4 flex flex-col md:flex-row gap-3">
+            <button id="btn-ask" type="button"
+              class="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-aqua-500 hover:bg-aqua-600 disabled:opacity-60 disabled:cursor-not-allowed text-white px-5 py-3 text-[15px] sm:text-base font-medium shadow-glow transition-colors">
+              <span aria-hidden="true">🙏</span> Xin Lời Cầu Nguyện &amp; Suy Niệm
+            </button>
+            <button id="btn-vocation" type="button"
+              class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-gold-400 bg-gold-50 hover:bg-gold-100 disabled:opacity-60 disabled:cursor-not-allowed text-gold-600 px-5 py-3 text-[15px] sm:text-base font-medium transition-colors">
+              <span aria-hidden="true">✝️</span> Xin Lời Chúa &amp; Lời Khuyên Ơn Gọi
+            </button>
+          </div>
+
+          <div id="ai-result" class="mt-6 hidden" aria-live="polite">
+            <div class="rounded-2xl border border-gold-200 bg-gradient-to-br from-gold-50 to-aqua-50 p-5 sm:p-6">
+              <div id="ai-loading" class="hidden items-center gap-3 text-aqua-700">
+                <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span>Đang chuẩn bị lời suy niệm…</span>
+              </div>
+              <div id="ai-output" class="ai-output leading-relaxed text-aqua-900 text-[15px] sm:text-base"></div>
+              <div id="ai-actions" class="hidden mt-5 justify-end">
+                <button id="btn-copy" type="button" class="text-sm rounded-full border border-aqua-200 bg-white px-4 py-2 text-aqua-700 hover:bg-aqua-50 transition-colors">Sao chép</button>
+              </div>
+            </div>
+          </div>
+
+          <p class="mt-5 text-xs text-aqua-900/55 leading-relaxed">
+            Lời đáp do trí tuệ nhân tạo (AI) gợi ý nên có thể chưa chính xác, kể cả câu Kinh Thánh được trích. Xin em đối chiếu lại với Kinh Thánh và hỏi thêm Dì giáo hoặc cha linh hướng.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 2 · SỔ VÀNG Ý NGUYỆN ===================== -->
+    <section id="so-vang" class="px-4 sm:px-6 py-14 scroll-mt-4" aria-labelledby="so-vang-title">
+      <div class="max-w-4xl mx-auto">
+        <div data-aos="fade-up" class="text-center mb-8">
+          <p class="text-xs tracking-[0.3em] uppercase text-gold-600 font-medium">Hiệp Ý Cầu Nguyện</p>
+          <h2 id="so-vang-title" class="mt-2 font-serif font-semibold text-4xl sm:text-5xl text-aqua-900 text-balance">Sổ Vàng Ý Nguyện</h2>
+          <p class="mt-3 text-aqua-900/75 max-w-xl mx-auto">Mời mọi người cùng hiệp ý cầu nguyện cho em Maria Nguyễn Thư. Lời chúc gửi đi sẽ hiện ngay để mọi người cùng đọc.</p>
+        </div>
+
+        <form id="wish-form" data-aos="fade-up" data-aos-delay="120" novalidate
+          class="max-w-2xl mx-auto rounded-2xl bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-aqua-200/70 shadow-soft p-5 sm:p-8">
+          <div id="fb-notice" class="hidden mb-5 rounded-2xl border border-gold-300 bg-gold-50 px-4 py-3 text-sm text-gold-600"></div>
+
+          <label for="wish-name" class="block text-sm font-medium text-aqua-700 mb-2">Tên của bạn</label>
+          <input id="wish-name" type="text" maxlength="40" autocomplete="name" required
+            class="block w-full rounded-2xl border border-aqua-200 bg-white/90 px-4 py-3 text-aqua-900 placeholder:text-aqua-900/40 focus:outline-none focus:ring-2 focus:ring-aqua-300 focus:border-aqua-300"
+            placeholder="Ví dụ: Anh Minh, Chị Hoa, Nhóm Giới trẻ…">
+
+          <label for="wish-message" class="block text-sm font-medium text-aqua-700 mt-5 mb-2">Lời chúc / Lời cầu nguyện</label>
+          <textarea id="wish-message" rows="4" maxlength="400" required
+            class="block w-full rounded-2xl border border-aqua-200 bg-white/90 px-4 py-3 text-aqua-900 placeholder:text-aqua-900/40 focus:outline-none focus:ring-2 focus:ring-aqua-300 focus:border-aqua-300 resize-y"
+            placeholder="Xin Chúa Giê-su Chịu Đóng Đinh gìn giữ em…"></textarea>
+          <div class="mt-1 text-right text-xs text-aqua-900/50"><span id="wish-count">0</span>/400</div>
+
+          <button id="btn-wish" type="submit"
+            class="mt-4 w-full inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-aqua-500 to-aqua-400 hover:from-aqua-600 hover:to-aqua-500 disabled:opacity-60 disabled:cursor-not-allowed text-white px-6 py-3 font-medium shadow-glow transition-colors">
+            <span aria-hidden="true">🕊️</span> Gửi Lời Chúc &amp; Cầu Nguyện
+          </button>
+          <p id="wish-status" class="mt-3 min-h-[1.25rem] text-sm text-center" role="status" aria-live="polite"></p>
+        </form>
+
+        <div data-aos="fade-up" class="mt-12">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="divider flex-1"></div>
+            <p class="text-sm text-gold-600 whitespace-nowrap"><span id="wish-total">0</span> lời chúc &amp; cầu nguyện</p>
+            <div class="divider flex-1"></div>
+          </div>
+          <p id="wish-empty" class="text-center text-aqua-900/55 py-8">Chưa có lời chúc nào. Mời bạn là người đầu tiên hiệp ý cầu nguyện cho em Maria Nguyễn Thư.</p>
+          <div id="wish-list" class="grid gap-4 sm:grid-cols-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="px-4 sm:px-6 pt-10 pb-28 sm:pb-16 text-center">
+      <div data-aos="fade-up" class="max-w-2xl mx-auto">
+        <div class="divider mb-8"></div>
+        <span class="footer-cross mx-auto mb-4" aria-hidden="true"></span>
+        <p class="font-serif font-semibold italic text-3xl sm:text-4xl text-gold-600 tracking-wide">Pax et Bonum</p>
+        <p class="mt-4 max-w-xl mx-auto font-serif italic text-xl sm:text-2xl text-aqua-700 leading-relaxed">
+          Nguyện chúc bình an của Thiên Chúa Tình Yêu luôn đồng hành cùng em trên hành trình ơn gọi yêu thương và phục vụ.
+        </p>
+        <span class="block mx-auto mt-6 h-px w-16 bg-gold-400/70" aria-hidden="true"></span>
+        <p class="mt-4 text-sm tracking-[0.12em] text-aqua-900/70">Dominic Nguyễn Văn Hòa</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ===================== TRÌNH PHÁT NHẠC (góc phải dưới) ===================== -->
+  <div id="music" class="fixed z-50 flex items-center gap-3">
+    <div id="music-hint" class="music-hint flex items-center max-w-[calc(100vw-6rem)] rounded-full bg-white/70 backdrop-blur-md border border-white/80 ring-1 ring-aqua-200/70 shadow-soft">
+      <button id="music-hint-play" type="button" class="flex items-center gap-2 pl-4 pr-2 py-2 text-xs sm:text-sm text-aqua-700 text-left">
+        <span aria-hidden="true">🎵</span><span>Chạm để bật bản nhạc dành riêng cho Maria Nguyễn Thư</span>
+      </button>
+      <button id="music-hint-close" type="button" aria-label="Ẩn lời nhắc" class="pr-3 pl-1 py-2 text-aqua-900/40 hover:text-aqua-700">&times;</button>
+    </div>
+    <button id="music-toggle" type="button" aria-pressed="false" aria-label="Bật nhạc nền" title="Bật / tắt nhạc nền"
+      class="music-btn relative shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-aqua-300 to-aqua-500 text-white shadow-glow flex items-center justify-center transition-transform hover:scale-105">
+      <span class="icon-note text-2xl leading-none" aria-hidden="true">♫</span>
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    </button>
+  </div>
+
+  <!-- Thư viện AOS rồi mã của trang -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/scene.js"></script>
+</body>
+</html>
